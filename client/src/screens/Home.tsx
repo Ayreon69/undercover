@@ -1,6 +1,6 @@
 // Accueil : le titre sur la façade, une petite scène qui montre le principe, pseudo + avatar, créer / rejoindre une table, règles.
 import { AnimatePresence, motion } from 'framer-motion';
-import { BookOpen, House, LogIn, Plus } from 'lucide-react';
+import { BookOpen, House, MessageSquare, LogIn, Plus } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { AVATARS } from '../../../shared/protocol';
 import { AVATAR_EMOJI, AVATAR_LABELS, Button, Facade, Logo, Stamp } from '../components/Ui';
@@ -85,9 +85,14 @@ export function Home() {
     <div className="screen home">
       <Facade />
       <div className="home-inner">
-        <a className="all-games" href="https://akhis-games.onrender.com">
-          <House size={16} aria-hidden /> Tous les jeux
-        </a>
+        <div className="home-links">
+          <a className="all-games" href="https://akhis-games.onrender.com">
+            <House size={16} aria-hidden /> Tous les jeux
+          </a>
+          <a className="all-games" href="https://akhis-games.onrender.com/feedback.html?jeu=undercover">
+            <MessageSquare size={16} aria-hidden /> Feedback
+          </a>
+        </div>
         <div className="home-grid">
           <header className="home-hero">
             <motion.div className="home-title" initial={{ x: -40, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.7, ease: [0.2, 0.8, 0.2, 1] }}>
