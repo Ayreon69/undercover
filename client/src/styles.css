@@ -2113,6 +2113,10 @@ ul {
     padding: 20px 24px 28px;
   }
 
+  .table-main {
+    order: 0;
+  }
+
   .table-side {
     position: sticky;
     top: 78px;
