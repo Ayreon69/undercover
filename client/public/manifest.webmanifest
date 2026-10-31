@@ -1,0 +1,11 @@
+{
+  "name": "Undercover",
+  "short_name": "Undercover",
+  "description": "Un mot secret, un indice chacun, et un imposteur à démasquer.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#86c440",
+  "theme_color": "#86c440",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
